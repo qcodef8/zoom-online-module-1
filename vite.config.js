@@ -3,7 +3,9 @@ import { defineConfig } from "vite";
 import { ViteEjsPlugin } from "vite-plugin-ejs";
 
 export default defineConfig({
-    base: "/zoom-online-module-1",
+    // If server is running on Production environment then using base "/zoom-online-module-1" for Github Pages deploy
+    // Otherwise, using "/" on Development/Testing/UAT environment
+    base: process.env.NODE_ENV === "production" ? "/zoom-online-module-1" : "/",
     root: "src",
     publicDir: "../public",
     build: {
