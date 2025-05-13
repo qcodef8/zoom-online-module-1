@@ -3,24 +3,224 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Justice Law Firm - About Us</title>
 
-        <!-- ? Include "header.ejs" partials for Favicon, Fonts,... -->
-        
-      <script type="module" crossorigin src="/zoom-online-module-1/assets/main-TjFLJevF.js"></script>
-      <link rel="stylesheet" crossorigin href="/zoom-online-module-1/assets/main-CoVBanpZ.css">
+        <!-- ? Include "head.ejs" partials for Favicon, Fonts,... -->
+        <!-- ? Favicon -->
+<link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg" />
+<link rel="shortcut icon" href="./images/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="./images/favicon/site.webmanifest" />
+
+<!-- ? Preconnect -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" />
+
+<!-- ? Fonts -->
+<link rel="stylesheet" href="./fonts/Manrope/stylesheet.css" />
+<link rel="stylesheet" href="./fonts/Roboto_Slab/stylesheet.css" />
+
+<!-- ? Font Awesome -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+      <script type="module" crossorigin src="/zoom-online-module-1/assets/main-DLSjd6MT.js"></script>
+      <link rel="stylesheet" crossorigin href="/zoom-online-module-1/assets/main-Bn0vhsu5.css">
     </head>
     <body>
         <!-- ? Header -->
-        <header class="header">
-    <h2>Header</h2>
+        <header class="header fixed">
+    <div class="container">
+        <div class="header__body">
+            <!-- ? Logo -->
+            <a href="/" class="logo-wrapper">
+                <img src="./images/logo.png" alt="Justice Law Firm" />
+            </a>
+
+            <!-- ? Navbar -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Practice Areas</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Attorneys</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">
+                            Pages
+                            <i class="fa-solid fa-angle-down nav__icon"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#!" class="sub-menu__link">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="sub-menu__link">404 Page</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="sub-menu__link">Coming Soon Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- ? Mobile Navbar -->
+            <div class="mobile-menu">
+                <input type="checkbox" id="drawer" class="mobile-menu__checkbox" hidden />
+                <label for="drawer">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <label for="drawer" class="overlay"></label>
+                <div class="drawer">
+                    <!-- ? Mobile Logo -->
+                    <div class="mobile-logo">
+                        <a href="/">
+                            <img src="./images/logo.png" alt="Justice Law Firm" />
+                        </a>
+                    </div>
+
+                    <!-- ? Mobile Navbar -->
+                    <ul class="mobile-nav">
+                        <li class="mobile-nav__item">
+                            <a href="#!" class="mobile-nav__link">Home</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#!" class="mobile-nav__link">About</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#!" class="mobile-nav__link">Practice Areas</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#!" class="mobile-nav__link">Attorneys</a>
+                        </li>
+                        <li class="mobile-nav__item mobile-nav__accordion">
+                            <input type="checkbox" id="toggle-pages" hidden />
+                            <label for="toggle-pages" class="mobile-nav__link mobile-nav__link--icon">
+                                Pages
+                                <i class="fa-solid fa-angle-right"></i>
+                            </label>
+                            <ul class="mobile-submenu">
+                                <li><a href="#!" class="mobile-nav__link">Contact Us</a></li>
+                                <li><a href="#!" class="mobile-nav__link">404 Page</a></li>
+                                <li><a href="#!" class="mobile-nav__link">Coming Soon Page</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ? Action -->
+            <p class="header__action">Call: <strong>(000) 123 456 789</strong></p>
+        </div>
+    </div>
 </header>
 
 
         <h1>About</h1>
 
         <!-- ? Footer -->
-        
+        <footer class="footer">
+    <div class="container">
+        <div class="row gy-sm-3">
+            <div class="col-7 col-md-6 col-sm-12">
+                <div class="footer__left">
+                    <div class="link-group">
+                        <h2 class="group__title">Justice</h2>
+                        <ul class="group__list">
+                            <li class="group__item">
+                                <a href="#!" class="link">Privacy Policy</a>
+                            </li>
+                            <li class="group__item">
+                                <a href="#!" class="link">Terms & Conditions</a>
+                            </li>
+                            <li class="group__item">
+                                <a href="#!" class="link">Cookie Preferences</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h2 class="group__title">Pages</h2>
+                        <ul class="group__list">
+                            <li class="group__item">
+                                <a href="#!" class="link">Home</a>
+                            </li>
+                            <li class="group__item">
+                                <a href="#!" class="link">About</a>
+                            </li>
+                            <li class="group__item">
+                                <a href="#!" class="link">Practice Areas</a>
+                            </li>
+                            <li class="group__item">
+                                <a href="#!" class="link">Attorneys</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link-group footer__info">
+                        <h2 class="group__title">Address</h2>
+                        <p class="info">
+                            50 Harrison Street, PH Suite 445 <br />
+                            Hoboken, NJ 07030 <br />
+                            <a href="tel:+84398973408">(000) 123-4567</a> <br />
+                            <a href="mailto:quynxf8@fullstack.edu.vn" class="email">quynxf8@fullstack.edu.vn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 col-md-6 col-sm-12">
+                <div class="footer__right">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5822934091516!2d109.21659152513743!3d13.804035936593241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316f6bf778c80973%3A0x8a7d0b5aa0af29c7!2zxJDhuqFpIGjhu41jIEZQVCBRdXkgTmjGoW4!5e0!3m2!1svi!2s!4v1747155083478!5m2!1svi!2s"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="footer__bottom">
+            <div class="logo">
+                <a href="/" class="footer__logo-wrapper">
+                    <img src="./images/logo-footer.png" alt="Justice Law Firm" />
+                </a>
+                <p class="copyright">Copyright © 2022 UI HUT All Rights Reserved</p>
+            </div>
+            <div class="socials">
+                <div class="social__item social__item--fb">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="social__item social__item--linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="social__item social__item--twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="social__item social__item--instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
         <!-- ? Scripts -->
     </body>
