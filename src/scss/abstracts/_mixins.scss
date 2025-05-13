@@ -1,0 +1,18 @@
+@use "sass:map";
+
+@use "./variables" as var;
+
+@mixin screen($key) {
+    $breakpoint: map.get(
+        $map: var.$device-breakpoints,
+        $key: $key,
+    );
+
+    @if ($breakpoint) {
+        @media screen and (max-width: $breakpoint) {
+            @content;
+        }
+    } @else {
+        @error "The value #{$key} not in breakpoints list!";
+    }
+}

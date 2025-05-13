@@ -1,3 +1,93 @@
-<header class="header">
-    <h2>Header</h2>
+<header class="header fixed">
+    <div class="container">
+        <div class="header__body">
+            <!-- ? Logo -->
+            <a href="/" class="logo-wrapper">
+                <img src="./images/logo.png" alt="Justice Law Firm" />
+            </a>
+
+            <!-- ? Navbar -->
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Practice Areas</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Attorneys</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">
+                            Pages
+                            <i class="fa-solid fa-angle-down nav__icon"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#!" class="sub-menu__link">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="sub-menu__link">404 Page</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="sub-menu__link">Coming Soon Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- ? Mobile Navbar -->
+            <div class="mobile-menu">
+                <input type="checkbox" id="drawer" class="mobile-menu__checkbox" hidden />
+                <label for="drawer">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <label for="drawer" class="overlay"></label>
+                <div class="drawer">
+                    <!-- ? Mobile Logo -->
+                    <div class="mobile-logo">
+                        <a href="/">
+                            <img src="./images/logo.png" alt="Justice Law Firm" />
+                        </a>
+                    </div>
+
+                    <!-- ? Mobile Navbar -->
+                    <ul class="mobile-nav">
+                        <li class="mobile-nav__item">
+                            <a href="#!" class="mobile-nav__link">Home</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#!" class="mobile-nav__link">About</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#!" class="mobile-nav__link">Practice Areas</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#!" class="mobile-nav__link">Attorneys</a>
+                        </li>
+                        <li class="mobile-nav__item mobile-nav__accordion">
+                            <input type="checkbox" id="toggle-pages" hidden />
+                            <label for="toggle-pages" class="mobile-nav__link mobile-nav__link--icon">
+                                Pages
+                                <i class="fa-solid fa-angle-right"></i>
+                            </label>
+                            <ul class="mobile-submenu">
+                                <li><a href="#!" class="mobile-nav__link">Contact Us</a></li>
+                                <li><a href="#!" class="mobile-nav__link">404 Page</a></li>
+                                <li><a href="#!" class="mobile-nav__link">Coming Soon Page</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ? Action -->
+            <p class="header__action">Call: <strong>(000) 123 456 789</strong></p>
+        </div>
+    </div>
 </header>
