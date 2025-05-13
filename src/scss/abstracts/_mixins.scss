@@ -1,0 +1,64 @@
+@use "sass:map";
+@use "./variables" as var;
+
+///
+/// Mixin: screen
+/// Description:
+///   This mixin allows you to write media queries using predefined device breakpoints.
+///   It pulls breakpoint values from the `$device-breakpoints` map defined in `variables`.
+///
+/// Parameters:
+///   $key (string) - The name of the breakpoint (e.g., 'tablet', 'mobile').
+///
+@mixin screen($key) {
+    $breakpoint: map.get(
+        $map: var.$device-breakpoints,
+        $key: $key,
+    );
+
+    @if ($breakpoint) {
+        @media screen and (max-width: $breakpoint) {
+            @content;
+        }
+    } @else {
+        @error "The value #{$key} not in breakpoints list!";
+    }
+}
+
+///
+/// Mixin: flex-center
+/// Description:
+///   A utility mixin to center elements using Flexbox.
+///   Supports horizontal, vertical, or both directions of centering.
+///
+/// Parameters:
+///   $direction (string) - Optional. Accepts 'horizontal', 'vertical', or 'both' (default).
+///
+@mixin flexCenter($direction: both) {
+    display: flex;
+
+    @if $direction == both {
+        justify-content: center;
+        align-items: center;
+    } @else if $direction == horizontal {
+        justify-content: center;
+    } @else if $direction == vertical {
+        align-items: center;
+    }
+}
+
+///
+/// Mixin: line-clamp
+/// Description:
+///   Truncates a block of text after a specified number of lines using
+///   -webkit-line-clamp and related properties.
+///
+/// Parameters:
+///   $lines (Number) - The number of lines after which the text will be truncated.
+///
+@mixin lineClamp($lines: 1) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
