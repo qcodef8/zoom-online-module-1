@@ -1,0 +1,101 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins";
+
+%normalText {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+
+    @include mixins.screen(lg) {
+        font-size: 1.4rem;
+    }
+
+    @include mixins.screen(md) {
+        font-size: 1.2rem;
+    }
+
+    @include mixins.screen(sm) {
+        font-size: 1.8rem;
+    }
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    &--horizontal {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+.section-content {
+    margin-top: 70px;
+}
+
+.section-title {
+    margin-top: 6px;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.25;
+
+    @include mixins.screen(lg) {
+        font-size: 3rem;
+    }
+
+    @include mixins.screen(md) {
+        font-size: 2rem;
+    }
+
+    @include mixins.screen(sm) {
+        font-size: 5rem;
+    }
+}
+
+.section-subtitle {
+    @extend %normalText;
+}
+
+.section-desc {
+    width: 470px;
+    margin-top: 18px;
+    @extend %normalText;
+
+    @include mixins.screen(lg) {
+        width: 350px;
+    }
+
+    @include mixins.screen(md) {
+        width: 300px;
+    }
+
+    @include mixins.screen(sm) {
+        width: 100%;
+    }
+}
+
+.section-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 18px;
+
+    .tab__item {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.67;
+        transition: color 0.2s linear;
+        cursor: pointer;
+        user-select: none;
+
+        &:hover,
+        &--active {
+            color: #{var.$orange-color};
+        }
+    }
+}

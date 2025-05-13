@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins";
+
+.btn {
+    height: 60px;
+    padding: 15px 35px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #{var.$white-color};
+    background: #{var.$orange-color};
+    transition: background 0.2s linear;
+
+    @include mixins.flexCenter(both);
+
+    @include mixins.screen(lg) {
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    @include mixins.screen(md) {
+        height: 45px;
+        padding: 15px 20px;
+        font-size: 1.2rem;
+    }
+
+    @include mixins.screen(sm) {
+        height: 50px;
+        padding: 15px 30px;
+        font-size: 1.6rem;
+    }
+
+    &--icon {
+        padding: 0;
+
+        &:hover {
+            background: #{var.$black-color};
+        }
+    }
+
+    &:hover {
+        background: #{var.$dark-orange-color};
+    }
+}
