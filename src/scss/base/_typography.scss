@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixins";
 
 html {
     font-size: 62.5%;
@@ -26,4 +27,26 @@ select,
 button {
     font-family: inherit;
     font-size: inherit;
+}
+
+.heading {
+    width: 570px;
+    margin-top: 12px;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1.15;
+
+    @include mixins.screen(lg) {
+        font-size: 4rem;
+    }
+
+    @include mixins.screen(md) {
+        width: 350px;
+        font-size: 2rem;
+    }
+
+    @include mixins.screen(sm) {
+        width: 100%;
+        font-size: 5.2rem;
+    }
 }
