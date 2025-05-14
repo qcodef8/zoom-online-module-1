@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Justice Law Firm - Practice Areas</title>
+
+        <!-- ? Include "head.ejs" partials for Favicon, Fonts,... -->
+        <%- include("./partials/head.ejs") %>
+    </head>
+    <body>
+        <!-- ? Header -->
+        <%- include("./partials/header.ejs") %>
+
+        <main>
+            <!-- ? Hero Section -->
+            <section class="hero practice-hero">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-subtitle sub-title">#Practice Areas</p>
+                        <h1 class="heading about-heading">Our Practice Areas to Serve You</h1>
+                        <p class="section-desc practice-page-desc">
+                            Where every injury is personal. We are a different kind of law firm. Let our small,
+                            passionate group of trial lawyers fight for your rights!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ? Services Section -->
+            <section class="services">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-subtitle sub-title">#Services</p>
+                        <h2 class="section-title">Our Practice Areas</h2>
+                        <p class="section-desc services-desc">
+                            Our Law Office provides a professional experience for all our clients, helping them navigate
+                            their legal rights.
+                        </p>
+                    </div>
+                    <div class="section-content">
+                        <div class="row row-cols-3 row-cols-md-2 row-cols-sm-1 g-3 g-md-2 g-sm-4">
+                            <div class="col">
+                                <div class="service__item">
+                                    <figure class="img-wrapper">
+                                        <img src="./images/home/service-1.png" alt="Personal Injury Law" />
+                                        <figcaption>
+                                            <a href="#!" class="service-title">Personal Injury Law</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="service__item">
+                                    <figure class="img-wrapper">
+                                        <img src="./images/home/service-2.png" alt="Employment Law" />
+                                        <figcaption>
+                                            <a href="#!" class="service-title">Employment Law</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="service__item">
+                                    <figure class="img-wrapper">
+                                        <img src="./images/home/service-3.png" alt="Immigration Law" />
+                                        <figcaption>
+                                            <a href="#!" class="service-title">Immigration Law</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="service__item">
+                                    <figure class="img-wrapper">
+                                        <img src="./images/home/service-4.png" alt="Family Law" />
+                                        <figcaption>
+                                            <a href="#!" class="service-title">Family Law</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="service__item">
+                                    <figure class="img-wrapper">
+                                        <img src="./images/home/service-5.png" alt="Divorce Law" />
+                                        <figcaption>
+                                            <a href="#!" class="service-title">Divorce Law</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="service__item">
+                                    <figure class="img-wrapper">
+                                        <img src="./images/home/service-6.png" alt="Property Law" />
+                                        <figcaption>
+                                            <a href="#!" class="service-title">Property Law</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ? Button View All -->
+                    <div class="view-all">
+                        <a href="#!" class="btn view-all-btn">View All</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ? CTA Section -->
+            <section class="cta">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-subtitle">#CTA</p>
+                        <h2 class="section-title">Dealing With a Issue?</h2>
+                        <p class="section-desc practice-page-desc">
+                            Where every injury is personal. We are a different kind of law firm. Let our small,
+                            passionate group of trial lawyers fight for your rights!
+                        </p>
+                    </div>
+                    <div class="cta-btn">
+                        <a href="#!" class="btn">Get a Consultations</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ? Footer -->
+        <%- include("./partials/footer.ejs") %>
+
+        <!-- ? Scripts -->
+        <script type="module" src="./js/main.js"></script>
+    </body>
+</html>
