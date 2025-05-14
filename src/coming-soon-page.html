@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Justice Law Firm - Coming Soon</title>
+
+        <!-- ? Include "head.ejs" partials for Favicon, Fonts,... -->
+        <%- include("./partials/head.ejs") %>
+    </head>
+    <body style="background: #0e1412">
+        <section class="coming-soon-page">
+            <figure class="coming-soon__decor-img">
+                <img src="./images/coming-soon-decor.svg" alt="Decorative Image" />
+            </figure>
+            <div class="coming-soon__content">
+                <div class="section-header">
+                    <h1 class="heading">Coming Soon</h1>
+                    <div class="section-desc coming-soon__desc">
+                        Are you Ready to get something new from us. Then subscribe the news latter to get latest
+                        updates?
+                    </div>
+                </div>
+                <form class="coming-soon__form">
+                    <input type="email" class="coming-soon__input" placeholder="Enter Your Email" />
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <p class="coming-soon__text">The latest Law News. <strong>Stright to your inbox</strong></p>
+            </div>
+        </section>
+
+        <!-- ? Scripts -->
+        <script type="module" src="./js/main.js"></script>
+    </body>
+</html>
