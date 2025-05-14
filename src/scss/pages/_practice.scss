@@ -1,0 +1,35 @@
+@use "../abstracts/mixins";
+
+// ? Hero Section
+.practice-hero {
+    height: 500px;
+
+    @include mixins.screen(md) {
+        height: 250px;
+    }
+
+    @include mixins.screen(sm) {
+        height: 250px;
+    }
+}
+
+.practice-heading,
+.practice-page-desc {
+    width: 670px;
+
+    @include mixins.screen(sm) {
+        width: 335px;
+    }
+}
+
+.practice-heading {
+    @include mixins.screen(sm) {
+        font-size: 3rem;
+    }
+}
+
+.practice-page-desc {
+    @include mixins.screen(sm) {
+        font-size: 1.2rem;
+    }
+}
