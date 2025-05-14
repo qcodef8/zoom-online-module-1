@@ -38,6 +38,10 @@
         }
     }
 
+    &--rounded {
+        border-radius: 10px;
+    }
+
     &:hover {
         background: #{var.$dark-orange-color};
     }
