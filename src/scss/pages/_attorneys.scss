@@ -1,0 +1,70 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins";
+
+// ? Hero Section
+.attorney-heading {
+    @include mixins.screen(lg) {
+        width: 450px;
+    }
+
+    @include mixins.screen(md) {
+        width: 300px;
+    }
+}
+
+.attorney-hero__right {
+    position: relative;
+    width: 100%;
+    height: 476px;
+
+    @include mixins.flexCenter(both);
+
+    @include mixins.screen(md) {
+        height: auto;
+    }
+
+    @include mixins.screen(sm) {
+        width: 80%;
+        margin: 70px auto 0;
+    }
+
+    &::after {
+        position: absolute;
+        top: -22px;
+        right: 0;
+        content: "";
+        display: block;
+        width: 20px;
+        height: 220px;
+        background: #{var.$orange-color};
+
+        @include mixins.screen(xl) {
+            top: 16px;
+        }
+
+        @include mixins.screen(lg) {
+            top: 54px;
+        }
+
+        @include mixins.screen(md) {
+            top: 0;
+        }
+
+        @include mixins.screen(sm) {
+            top: 0;
+        }
+    }
+}
+
+.hero__decor-img {
+    &--orange-brush {
+        bottom: 50%;
+        left: -50px;
+        translate: 0 50%;
+
+        @include mixins.screen(md) {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
