@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Justice Law Firm - Contact Us</title>
+
+        <!-- ? Include "head.ejs" partials for Favicon, Fonts,... -->
+        <%- include("./partials/head.ejs") %>
+    </head>
+    <body>
+        <!-- ? Header -->
+        <%- include("./partials/header.ejs") %>
+
+        <main>
+            <div class="container">
+                <section class="contact">
+                    <h1 class="section-title">Contact With Justice Law Firm</h1>
+                    <p class="section-desc contact__desc">
+                        At The Justice Law Firm, our clients are our top priority. Fueled by passion and determination,
+                        we have a reputation for legal excellence in North Carolina. Our firm was established in 1907
+                        and we’ve been delivering best.
+                    </p>
+                    <form action="#!" class="contact__form">
+                        <div class="row g-3">
+                            <div class="col-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="first-name" class="form-label">First Name</label>
+                                    <input type="text" id="first-name" class="form-input" placeholder="Nguyen" />
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="last-name" class="form-label">Last Name</label>
+                                    <input type="text" id="last-name" class="form-input" placeholder="Van A" />
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="text" id="phone" class="form-input" placeholder="(+84) 123-456-789" />
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" class="form-input" placeholder="example@gmail.com" />
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <div class="form-group select-group">
+                                    <label for="service" class="form-label">Service</label>
+                                    <input type="checkbox" id="service" class="form-checkbox--hidden" hidden />
+                                    <label for="service" class="form-select">
+                                        <span class="selected-option">Practice Area</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </label>
+                                    <ul class="form-options">
+                                        <li class="option selected">Practice Area</li>
+                                        <li class="option">Personal Injury Law</li>
+                                        <li class="option">Employment Law</li>
+                                        <li class="option">Immigration Law</li>
+                                        <li class="option">Family Law</li>
+                                        <li class="option">Divorce Law</li>
+                                        <li class="option">Property Law</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <div class="form-group select-group">
+                                    <label for="lawyer" class="form-label">Lawyer</label>
+                                    <input type="checkbox" id="lawyer" class="form-checkbox--hidden" hidden />
+                                    <label for="lawyer" class="form-select">
+                                        <span class="selected-option">Specific Attorney</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </label>
+                                    <ul class="form-options">
+                                        <li class="option selected">Specific Attorney</li>
+                                        <li class="option">Junior Attorney</li>
+                                        <li class="option">Associate Attorney</li>
+                                        <li class="option">Senior Associate Attorney</li>
+                                        <li class="option">Managing Attorney</li>
+                                        <li class="option">Equity Partner</li>
+                                        <li class="option">Managing Partner</li>
+                                        <li class="option">General Counsel</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" class="form-textarea" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-submit form-submit--end">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </form>
+
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.5822934091516!2d109.21659152513743!3d13.804035936593241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316f6bf778c80973%3A0x8a7d0b5aa0af29c7!2zxJDhuqFpIGjhu41jIEZQVCBRdXkgTmjGoW4!5e0!3m2!1svi!2s!4v1747155083478!5m2!1svi!2s"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- ? Footer -->
+        <%- include("./partials/footer.ejs") %>
+
+        <!-- ? Scripts -->
+        <script type="module" src="./js/main.js"></script>
+    </body>
+</html>
